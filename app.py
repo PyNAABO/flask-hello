@@ -8,5 +8,5 @@ def hello_world():
 
 @app.route('/get_image')
 def get_image():
-    filename = 'logo.webp'
-    return send_file(filename)
+    filename = 'ERROR.gif'
+    return send_file(filename, mimetype='image/gif')
