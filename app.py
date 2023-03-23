@@ -6,6 +6,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, PyNAABO!'
 
+@app.route(‘/hello’)
+def hello_world():
+    return ‘hello world’
+
 @app.route('/get_image')
 def get_image():
     filename = 'ERROR.gif'
