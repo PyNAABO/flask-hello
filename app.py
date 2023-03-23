@@ -1,4 +1,7 @@
+import time
 from flask import Flask, send_file
+
+
 app = Flask(__name__)
 
 
@@ -6,9 +9,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, PyNAABO!'
 
-@app.route(‘/hello’)
+@app.route('/hello')
 def hello_world():
-    return ‘hello world’
+    return 'hello world'+str(time.time())
 
 @app.route('/get_image')
 def get_image():
