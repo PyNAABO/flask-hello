@@ -10,7 +10,7 @@ def hello_world():
     return 'Hello, PyNAABO!'
 
 @app.route('/hello')
-def hello_world():
+def hello():
     return 'hello world'+str(time.time())
 
 @app.route('/get_image')
